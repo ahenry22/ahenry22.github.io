@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Colleges Help Low-Income Students More?</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>What Colleges Help Low-Income Students More?</h1>
+        <div id="controls">
+            X: <select id="xVariable" class="variable"></select>
+            Y: <select id="yVariable" class="variable"></select>
+            size: <select id="sizeVariable" class="variable"></select>
+            <p>Minimum students / college:<span id="value-time">200</span><input type="range" id="minSlider" min="50" max="3000" step="50" value="200"></p>
+        </div>
+        <div id="vis"></div>
+    </div>
+    <div id="tooltip" style="display:none"></div>
+    
+    <!-- Load D3.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

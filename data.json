@@ -1,0 +1,8 @@
+{
+    "points": [
+      {"id": 1, "x": 30, "y": 50, "color": "orange"},
+      {"id": 2, "x": 70, "y": 80, "color": "steelblue"},
+      {"id": 3, "x": 45, "y": 60, "color": "orange"},
+      {"id": 4, "x": 65, "y": 40, "color": "steelblue"}
+    ]
+  }
