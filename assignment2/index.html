@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Hat / Black Hat: NYPD Civilian Complaints</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <h2>White Hat</h2>
+        <div id="white"></div>
+        <p class="note">Source: <a href="https://www.propublica.org/datastore/dataset/civilian-complaints-against-new-york-city-police-officers">ProPublica / NYC CCRB</a>.</p>
+        <p>A few choices keep the data in this graph from misleading anyone reading it:</p>
+        <ul>
+            <li><b>No y-axis manipulation:</b> the axis starts at zero, therefore the bars show the actual gaps between groups instead of being inflated.</li>
+            <li><b>No filter manipulation:</b> every group with at least 30 decided allegations is included.</li>
+            <li><b>No title manipulation:</b> the title only describes what the chart shows instead of making inferred claims.</li>
+            <li><b>Sample sizes shown:</b> each label includes n, so it can be clear if a rate is based on only a few allegations.</li>
+        </ul>
+
+        <h2>Black Hat</h2>
+        <div id="black"></div>
+        <p class="note">Source: <a href="https://www.propublica.org/datastore/dataset/civilian-complaints-against-new-york-city-police-officers">ProPublica / NYC CCRB</a>.</p>
+        <p>This is the same exact data, but manipulated in a few ways to intentionally mislead somebody reading it:</p>
+        <ul>
+            <li><b>Y-axis manipulation:</b> the beginning of the y-axis is inflated, so small differences between different groups appear to be much larger gaps.</li>
+            <li><b>Filter manipulation:</b> The Unknown group was dropped from the dataset and only the 5 largest groups were chosen.</li>
+            <li><b>Title manipulation:</b> the title makes bold claims about the system failing certain groups vs. others, which is an impossible conclusion to draw from this data alone.</li>
+        </ul>
+
+        <h2>References</h2>
+        <ul>
+            <li>ProPublica, <a href="https://www.propublica.org/datastore/dataset/civilian-complaints-against-new-york-city-police-officers">Civilian Complaints Against New York City Police Officers</a> (CCRB data).</li>
+            <li>D3.js v7, <a href="https://d3js.org">d3js.org</a>.</li>
+            <li>Michael Correll and Jeffrey Heer, <a href="https://idl.uw.edu/papers/blackhatvis">Black Hat Visualization</a>, DECISIVe Workshop, IEEE VIS, 2017.</li>
+            <li>Ravi Parikh, <a href="https://www.heap.io/blog/how-to-lie-with-data-visualization">How to Lie with Data Visualization</a>, Heap, 2014.</li>
+        </ul>
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
